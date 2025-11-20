@@ -1,0 +1,183 @@
+/*Estilos generales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Color a los enlaces */
+nav ul a {
+    color: #52e730;
+}
+
+/* Estilo y flex al header*/
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+/*Flex al nav*/
+header nav ul {
+    display: flex;
+    column-gap: 10px;
+    list-style: none;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+/*Estilo y flex a título y subtítulos*/
+.Título {
+    color: rgb(251, 251, 251);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.Subtítulo {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.quienes_somos {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: antiquewhite;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Alineación del párrafos */
+p {
+    text-align: center;
+    padding: 30px;
+
+}
+
+/*Componentes*/
+
+/*Aplico estilo a secciones*/
+
+.Planes {
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    color: antiquewhite;
+    margin: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Rutina {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: antiquewhite;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Achico imagenes*/
+.contenedor-de-imagenes img {
+    padding: 20px;
+    width: 450px;
+    height: 280px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.contenedor-de-imagenes-2 img {
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    border-radius: 30px;
+}
+
+.contenedor-de-imagenes-index img {
+    padding: 20px;
+    width: 450px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    border-radius: 30px;
+}
+
+/*Posiciono imagenes con flex*/
+
+/*Grid*/
+.contenedor-de-imagenes-index {
+    display: grid;
+    /* Defino 3 columnas de igual ancho */
+    grid-template-columns: repeat(3, 1fr);
+    /* Agrego 10px de espacio entre celdas */
+    grid-gap: 10px;
+}
+
+/*Flex*/
+main .contenedor-de-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .contenedor-de-imagenes-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Achico logo encabezado*/
+.Logo-encabezado img {
+    width: 100px;
+    height: auto;
+}
+
+/*Aplico estilo y flex a banner*/
+.banner-contenido {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 30px;
+}
+
+/*Achico imagen del banner*/
+.banner-contenido img {
+    width: 200px;
+    height: 200px;
+}
+
+/*Aplico estilo a footer*/
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.Subtítulo-index {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
