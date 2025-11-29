@@ -137,6 +137,7 @@ p {
     justify-content: center;
     gap: 20px;            /* Espacio entre imágenes */
     margin-top: 40px;  /* Espacio entre imagenes y el nav */
+    margin-bottom: 40px;
 }
 
 /*Adapto imagenes*/
