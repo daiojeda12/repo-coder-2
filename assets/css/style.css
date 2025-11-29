@@ -27,19 +27,34 @@ header {
 
 header nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 /*Flex al nav*/
 header nav ul {
-    display: flex;
-    column-gap: 10px;
     list-style: none;
+    display: flex;
+    gap: 20px;
 
 }
 
 header nav ul li a {
     text-decoration: none;
+}
+
+/* Menu hamburguesa*/
+nav .menu {
+    display: flex;  /* Esto está bien para desktop */
+    gap: 20px;
+}
+.menu-btn {
+    display: none; /* Oculto el botón en desktop */
+    background: none;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    color: white;
 }
 
 /*Estilo y flex a título y subtítulos*/
@@ -99,11 +114,10 @@ p {
 /*Achico imagenes index*/
 .contenedor-de-imagenes-index img {
     padding: 20px;
-    width: 450px;
-    height: 300px;
-    padding: 20px;
-    border-radius: 20px;
+    width: 100%;
+    height: auto;
     border-radius: 30px;
+    
 }
 
 
@@ -122,6 +136,7 @@ p {
     flex-wrap: wrap;      /* Permite que las imágenes salten a otra línea */
     justify-content: center;
     gap: 20px;            /* Espacio entre imágenes */
+    margin-top: 40px;  /* Espacio entre imagenes y el nav */
 }
 
 .contenedor-de-imagenes img {
@@ -177,3 +192,44 @@ footer {
     }
 }
 
+/*Media queries para responsive celular grilla*/
+@media (max-width: 600px) {
+    .contenedor-de-imagenes-index {
+        grid-template-columns: 1fr; /*1 columna*/
+    }
+}
+
+/* Media queries menu hamburguesa */
+/* Desktop (normal) */
+nav .menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Media queries menu hamburguesa */
+@media (max-width: 768px) {
+
+    /* Oculto el menú en mobile */
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #fff;
+        padding: 20px;
+        position: absolute;
+        top: 80px;    
+        right: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Muestro el botón hamburguesa */
+    .menu-btn {
+        display: block;
+    }
+
+    /* Al activar el menú */
+    nav .menu.open {
+        display: flex;
+    }
+}
