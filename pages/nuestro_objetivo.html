@@ -9,10 +9,12 @@
     <!--Se configura ancho de sitio para que coincida con bootstrap aplicado en el index-->
     <style>
         body {
-        width: 100%;
-        max-width: 1320px; /* Defino el ancho máximo de la página */
-        margin: 0 auto; /* Centro el contenido horizontalmente */
-    }
+            width: 100%;
+            max-width: 1320px;
+            /* Defino el ancho máximo de la página */
+            margin: 0 auto;
+            /* Centro el contenido horizontalmente */
+        }
     </style>
 </head>
 
@@ -45,12 +47,12 @@
             Contamos con rutinas asistidas para mejorar tu técnica.
         </p>
 
-        
-            <div class="contenedor-de-imagenes">
-                <img src="../assets/img/img_4.jpg" alt="img_4" >
-                <img src="../assets/img/img_7.jpg" alt="img_7" >
-            </div>
-        
+
+        <div class="contenedor-de-imagenes">
+            <img src="../assets/img/img_4.jpg" alt="img_4">
+            <img src="../assets/img/img_7.jpg" alt="img_7">
+        </div>
+
 
     </main>
 
@@ -58,7 +60,7 @@
     <div class="banner">
         <div class="banner-contenido">
             <img src="../assets/img/logo.png" alt="logo-banner">
-                
+
         </div>
     </div>
 
@@ -69,14 +71,15 @@
         </p>
     </footer>
 
+    <!--JavaScript para menu hamburguesa-->
     <script>
-    const btn = document.querySelector('.menu-btn');
-    const menu = document.querySelector('.menu');
+        const btn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
 
-    btn.addEventListener('click', () => {
-        menu.classList.toggle('open');
-    });
-</script>
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>

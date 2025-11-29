@@ -19,7 +19,9 @@
             <h1>Bienvenidos/as 💪🏾</h1>
         </div>
         <nav>
-            <ul>
+            <!--Se agrega boton para menu hamburguesa-->
+            <button class="menu-btn">☰</button>
+            <ul class="menu">
                 <li> <a href="index.html">Inicio</a></li>
                 <li> <a href="./pages/quienes_somos.html">Quienes somos</a></li>
                 <li> <a href="./pages/nuestro_objetivo.html">Objetivo</a></li>
@@ -66,6 +68,16 @@
     <footer>
         Powered by: Daiana Ojeda. Todos los derechos reservados.
     </footer>
+
+    <!--JavaScript para menu hamburguesa-->
+    <script>
+        const btn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>

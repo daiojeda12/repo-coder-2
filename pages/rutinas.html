@@ -9,11 +9,13 @@
     <!--Se configura ancho de sitio para que coincida con bootstrap aplicado en el index-->
     <style>
         body {
-        width: 100%;
-        max-width: 1320px; /* Defino el ancho máximo de la página */
-        margin: 0 auto; /* Centro el contenido horizontalmente */
-    }
-    </style>    
+            width: 100%;
+            max-width: 1320px;
+            /* Defino el ancho máximo de la página */
+            margin: 0 auto;
+            /* Centro el contenido horizontalmente */
+        }
+    </style>
 </head>
 
 <body>
@@ -37,11 +39,11 @@
             </ul>
         </nav>
 
-        
+
     </header>
     <main>
         <!--A continuación se encuentran los tipos de rutinas-->
-        
+
 
         <div class="Subtítulo">
             <h2>PRINCIPIANTE:</h2>
@@ -49,7 +51,7 @@
 
         <!--Sección de rutina nivel principiante-->
         <section class="Rutina">
-            
+
             <p>
                 Si nunca entrenaste o estuviste mucho tiempo sin hacerlo, esta rutina es para vos.
                 Comenzaremos paso a paso para no sobrecargar los músculos y recomendamos realizar esta rutina durante un
@@ -76,9 +78,9 @@
         </section>
 
 
-            <div class="Subtítulo">
-                <h2>INTERMEDIO:</h2>
-            </div>
+        <div class="Subtítulo">
+            <h2>INTERMEDIO:</h2>
+        </div>
 
         <!--Sección de rutina nivel intermedio-->
         <section class="Rutina">
@@ -186,23 +188,24 @@
     <div class="banner">
         <div class="banner-contenido">
             <img src="../assets/img/logo.png" alt="logo-banner">
-                
+
         </div>
     </div>
 
     <!--Derechos de autor-->
-    <footer>        
+    <footer>
         Powered by: Daiana Ojeda. Todos los derechos reservados.
     </footer>
 
+    <!--JavaScript para menu hamburguesa-->
     <script>
-    const btn = document.querySelector('.menu-btn');
-    const menu = document.querySelector('.menu');
+        const btn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
 
-    btn.addEventListener('click', () => {
-        menu.classList.toggle('open');
-    });
-</script>
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>
