@@ -43,9 +43,9 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Menu hamburguesa*/
+/* Menú hamburguesa*/
 nav .menu {
-    display: flex;  /* Esto está bien para desktop */
+    display: flex;  /* Para desktop */
     gap: 20px;
 }
 .menu-btn {
@@ -57,7 +57,7 @@ nav .menu {
     color: white;
 }
 
-/*Estilo y flex a título y subtítulos*/
+/*Estilo a título y subtítulos*/
 .Título {
     color: rgb(251, 251, 251);
     text-align: center;
@@ -111,7 +111,7 @@ p {
 }
 
 
-/*Achico imagenes index*/
+/*Adapto imagenes index*/
 .contenedor-de-imagenes-index img {
     padding: 20px;
     width: 100%;
@@ -121,7 +121,7 @@ p {
 }
 
 
-/*uso de Grid*/
+/*Uso de Grid*/
 .contenedor-de-imagenes-index {
     display: grid;
     /* Defino 3 columnas de igual ancho */
@@ -130,7 +130,7 @@ p {
     grid-gap: 10px;
 }
 
-/*uso de Flex*/
+/*Uso de Flex*/
 .contenedor-de-imagenes {
     display: flex;
     flex-wrap: wrap;      /* Permite que las imágenes salten a otra línea */
@@ -139,6 +139,7 @@ p {
     margin-top: 40px;  /* Espacio entre imagenes y el nav */
 }
 
+/*Adapto imagenes*/
 .contenedor-de-imagenes img {
     width: 100%;
     max-width: 350px;     /* Tamaño máximo de cada imagen */
@@ -179,7 +180,7 @@ footer {
     padding: 10px;
 }
 
-/*Media queries para responsive celular*/
+/*Media queries para responsive celular a contenedor de imágenes*/
 @media (max-width: 600px) {
     .contenedor-de-imagenes {
         display: block; /* de fila → columna */
@@ -192,7 +193,7 @@ footer {
     }
 }
 
-/*Media queries para responsive celular grilla*/
+/*Media queries para responsive celular grilla de imagenes del index*/
 @media (max-width: 600px) {
     .contenedor-de-imagenes-index {
         grid-template-columns: 1fr; /*1 columna*/
@@ -200,13 +201,13 @@ footer {
 }
 
 /* Media queries menu hamburguesa */
-/* Desktop (normal) */
+/* Desktop first */
 nav .menu {
     display: flex;
     gap: 20px;
 }
 
-/* Media queries menu hamburguesa */
+
 @media (max-width: 768px) {
 
     /* Oculto el menú en mobile */
