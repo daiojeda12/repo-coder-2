@@ -181,3 +181,53 @@ footer {
     justify-content: center;
     padding: 10px;
 }
+
+/*Configuración destktop first html quienes_somos*/
+.contenedor-de-imagenes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contenedor-de-imagenes img {
+    width: 45%; /* para que entren dos imágenes */
+    border-radius: 10px; /* opcional */
+}
+
+/*Media queries para celular*/
+@media (max-width: 600px) {
+    .contenedor-de-imagenes {
+        display: block; /* de fila → columna */
+        text-align: center;
+    }
+
+    .contenedor-de-imagenes img {
+        width: 90%;      /* ocupar casi todo el ancho */
+        margin-bottom: 20px;
+    }
+}
+
+/*Configuración destktop first html nuestros_servicios*/
+.contenedor-de-imagenes-2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contenedor-de-imagenes-2 img {
+    width: 45%; /* para que entren dos imágenes */
+    border-radius: 10px; /* opcional */
+}
+
+/*Media queries para celular*/
+@media (max-width: 600px) {
+    .contenedor-de-imagenes-2 {
+        display: block; /* de fila → columna */
+        text-align: center;
+    }
+
+    .contenedor-de-imagenes-2 img {
+        width: 90%;      /* ocupar casi todo el ancho */
+        margin-bottom: 20px;
+    }
+}
