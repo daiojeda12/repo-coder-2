@@ -45,15 +45,13 @@ header nav ul li a {
 /*Estilo y flex a título y subtítulos*/
 .Título {
     color: rgb(251, 251, 251);
-    display: flex;
-    align-items: center;
+    text-align: center;
     padding: 10px;
 }
 
 .Subtítulo {
     color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 10px;
 }
 
@@ -98,24 +96,7 @@ p {
 }
 
 
-/*Achico imagenes*/
-.contenedor-de-imagenes img {
-    padding: 20px;
-    width: 450px;
-    height: 280px;
-    padding: 20px;
-    border-radius: 30px;
-}
-
-.contenedor-de-imagenes-2 img {
-    padding: 20px;
-    width: 300px;
-    height: 450px;
-    padding: 20px;
-    border-radius: 20px;
-    border-radius: 30px;
-}
-
+/*Achico imagenes index*/
 .contenedor-de-imagenes-index img {
     padding: 20px;
     width: 450px;
@@ -125,9 +106,8 @@ p {
     border-radius: 30px;
 }
 
-/*Posiciono imagenes con flex*/
 
-/*Grid*/
+/*uso de Grid*/
 .contenedor-de-imagenes-index {
     display: grid;
     /* Defino 3 columnas de igual ancho */
@@ -136,17 +116,19 @@ p {
     grid-gap: 10px;
 }
 
-/*Flex*/
-main .contenedor-de-imagenes {
+/*uso de Flex*/
+.contenedor-de-imagenes {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;      /* Permite que las imágenes salten a otra línea */
     justify-content: center;
+    gap: 20px;            /* Espacio entre imágenes */
 }
 
-main .contenedor-de-imagenes-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.contenedor-de-imagenes img {
+    width: 100%;
+    max-width: 350px;     /* Tamaño máximo de cada imagen */
+    height: auto;         /* Mantiene proporciones */
+    border-radius: 20px;
 }
 
 /*Achico logo encabezado*/
@@ -182,19 +164,7 @@ footer {
     padding: 10px;
 }
 
-/*Configuración destktop first html quienes_somos*/
-.contenedor-de-imagenes {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.contenedor-de-imagenes img {
-    width: 45%; /* para que entren dos imágenes */
-    border-radius: 10px; /* opcional */
-}
-
-/*Media queries para celular*/
+/*Media queries para responsive celular*/
 @media (max-width: 600px) {
     .contenedor-de-imagenes {
         display: block; /* de fila → columna */
@@ -207,27 +177,3 @@ footer {
     }
 }
 
-/*Configuración destktop first html nuestros_servicios*/
-.contenedor-de-imagenes-2 {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.contenedor-de-imagenes-2 img {
-    width: 45%; /* para que entren dos imágenes */
-    border-radius: 10px; /* opcional */
-}
-
-/*Media queries para celular*/
-@media (max-width: 600px) {
-    .contenedor-de-imagenes-2 {
-        display: block; /* de fila → columna */
-        text-align: center;
-    }
-
-    .contenedor-de-imagenes-2 img {
-        width: 90%;      /* ocupar casi todo el ancho */
-        margin-bottom: 20px;
-    }
-}
