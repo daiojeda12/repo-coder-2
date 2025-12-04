@@ -1,10 +1,10 @@
 /* Importación de archivos scss */
 
-@import 'footer';
+@import 'variables';
+@import 'mixins';
 @import 'global';
 @import 'header';
 @import 'imagenes';
-@import 'mixins';
-@import 'responsive';
 @import 'secciones';
-@import 'variables';
+@import 'footer';
+@import 'responsive';
