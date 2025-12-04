@@ -1,0 +1,27 @@
+/* Estilos y acomodamiento de contenedores de imagenes */
+.contenedor-de-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+
+    img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 20px;
+    }
+}
+
+.contenedor-de-imagenes-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        padding: 20px;
+    }
+}

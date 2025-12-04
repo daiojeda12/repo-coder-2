@@ -1,0 +1,40 @@
+/* Estilos y acomodamiento del header */
+
+header {
+    background-color: $color-fondo-negro;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+
+            li {
+                a {
+                    color: $color-primario;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    .menu-btn {
+        display: none;
+        color: white;
+        background: none;
+        border: none;
+        font-size: 32px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,21 @@
+/* Estilo de las secciones */
+@use 'variables';
+@use 'mixins';
+
+.Título {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.Subtítulo {
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.quienes_somos {
+    @include mixins.caja-negra;
+    margin: 20px;
+    text-align: center;
+}

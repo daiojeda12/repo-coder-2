@@ -1,0 +1,35 @@
+/* Responsive para celulares */
+@media (max-width: 600px) {
+    .contenedor-de-imagenes {
+        display: block;
+        text-align: center;
+
+        img {
+            width: 90%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .contenedor-de-imagenes-index {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: white;
+        padding: 20px;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}

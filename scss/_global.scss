@@ -1,0 +1,24 @@
+/*  Estilo global del sitio */
+@use 'variables';
+@use 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+}
+
+p {
+    text-align: center;
+    padding: 30px;
+}
+
+.quienes_somos {
+    @include caja-negra;
+    margin: 20px;
+    text-align: center;
+}
