@@ -1,5 +1,5 @@
 /*  Estilo global del sitio */
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins';
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: $font-primary;
+    font-family: v.$font-primary;
 }
 
 p {
@@ -18,7 +18,7 @@ p {
 }
 
 .quienes_somos {
-    @include caja-negra;
+    @include mixins.caja-negra;
     margin: 20px;
     text-align: center;
 }

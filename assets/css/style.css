@@ -1,8 +1,9 @@
 @charset "UTF-8";
 /* Importación de archivos scss */
 /* Creo las variables de los estilos que hay en común */
-/* Creo las variables de los estilos que hay en común */
-/* Creo las variables de los estilos que hay en común */
+/* Importación de archivos scss */
+/* Importación de archivos scss */
+/*  Estilo global del sitio */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@ p {
   text-align: center;
 }
 
-/* Creo las variables de los estilos que hay en común */
+/* Importación de archivos scss */
 /* Estilos y acomodamiento del header */
 header {
   background-color: black;
@@ -62,7 +63,7 @@ header .menu-btn {
   cursor: pointer;
 }
 
-/* Creo las variables de los estilos que hay en común */
+/* Importación de archivos scss */
 /* Estilos y acomodamiento de contenedores de imagenes */
 .contenedor-de-imagenes {
   display: flex;
@@ -89,39 +90,7 @@ header .menu-btn {
   padding: 20px;
 }
 
-/* Creo las variables de los estilos que hay en común */
-/* Estilo de las secciones */
-.Título {
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-.Subtítulo {
-  color: black;
-  text-align: center;
-  padding: 10px;
-}
-
-.quienes_somos {
-  background-color: black;
-  border-radius: 10px;
-  padding: 20px;
-  color: antiquewhite;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  text-align: center;
-}
-
-/* Estilos y acomodamiento del footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: black;
-  color: antiquewhite;
-}
-
-/* Creo las variables de los estilos que hay en común */
+/* Importación de archivos scss */
 /* Responsive para celulares */
 @media (max-width: 600px) {
   .contenedor-de-imagenes {
@@ -152,6 +121,38 @@ footer {
   .menu-btn {
     display: block;
   }
+}
+/* Importación de archivos scss */
+/* Estilo de las secciones */
+.Título {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.Subtítulo {
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.quienes_somos {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  color: antiquewhite;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  text-align: center;
+}
+
+/* Importación de archivos scss */
+/* Estilos y acomodamiento del footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: antiquewhite;
 }
 
 /*# sourceMappingURL=style.css.map */

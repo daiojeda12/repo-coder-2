@@ -1,7 +1,10 @@
 /* Estilos y acomodamiento del footer */
+
+@use 'variables' as v;
+
 footer {
     text-align: center;
     padding: 20px;
-    background-color: $color-fondo-negro;
-    color: $color-texto-blanco;
+    background-color: v.$color-fondo-negro;
+    color: v.$color-texto-blanco;
 }
