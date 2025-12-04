@@ -1,9 +1,9 @@
-@use 'variables';
+@use 'variables' as v;
 
 @mixin caja-negra {
-    background-color: $color-fondo-negro;
-    border-radius: $radius;
+    background-color: v.$color-fondo-negro;
+    border-radius: v.$radius;
     padding: 20px;
-    color: $color-texto-blanco;
-    box-shadow: $sombra;
+    color: v.$color-texto-blanco;
+    box-shadow: v.$sombra;
 }

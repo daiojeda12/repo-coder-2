@@ -1,19 +1,157 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     background-color: $color-fondo-negro;
- *   |                       ^^^^^^^^^^^^^^^^^^
- *   '
- *   assets\scss\_mixins.scss 4:23     caja-negra()
- *   assets\scss\_secciones.scss 18:5  @import
- *   assets\scss\style.scss 8:9        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      background-color: $color-fondo-negro;\d\a   \2502                        ^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets\\scss\\_mixins.scss 4:23     caja-negra()\a   assets\\scss\\_secciones.scss 18:5  @import\a   assets\\scss\\style.scss 8:9        root stylesheet";
+@charset "UTF-8";
+/* Importación de archivos scss */
+/* Creo las variables de los estilos que hay en común */
+/* Creo las variables de los estilos que hay en común */
+/* Creo las variables de los estilos que hay en común */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  text-align: center;
+  padding: 30px;
+}
+
+.quienes_somos {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  color: antiquewhite;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  text-align: center;
+}
+
+/* Creo las variables de los estilos que hay en común */
+/* Estilos y acomodamiento del header */
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  color: #52e730;
+  text-decoration: none;
+}
+header nav .menu {
+  display: flex;
+  gap: 20px;
+}
+header .menu-btn {
+  display: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* Creo las variables de los estilos que hay en común */
+/* Estilos y acomodamiento de contenedores de imagenes */
+.contenedor-de-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+.contenedor-de-imagenes img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+}
+
+.contenedor-de-imagenes-index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.contenedor-de-imagenes-index img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+/* Creo las variables de los estilos que hay en común */
+/* Estilo de las secciones */
+.Título {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.Subtítulo {
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.quienes_somos {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  color: antiquewhite;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  text-align: center;
+}
+
+/* Estilos y acomodamiento del footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: antiquewhite;
+}
+
+/* Creo las variables de los estilos que hay en común */
+/* Responsive para celulares */
+@media (max-width: 600px) {
+  .contenedor-de-imagenes {
+    display: block;
+    text-align: center;
+  }
+  .contenedor-de-imagenes img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .contenedor-de-imagenes-index {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

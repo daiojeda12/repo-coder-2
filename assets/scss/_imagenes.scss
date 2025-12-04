@@ -1,4 +1,6 @@
 /* Estilos y acomodamiento de contenedores de imagenes */
+@use 'variables';
+
 .contenedor-de-imagenes {
     display: flex;
     flex-wrap: wrap;
