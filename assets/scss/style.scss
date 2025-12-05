@@ -1,6 +1,6 @@
 /* Importación de archivos scss */
 
-@use 'variables';
+@use 'variables' as *;
 @use 'mixins';
 @use 'global';
 @use 'header';

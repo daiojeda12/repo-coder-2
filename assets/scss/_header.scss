@@ -1,8 +1,8 @@
 /* Estilos y acomodamiento del header */
-@use 'variables' as v;
+@use 'variables' as *;
 
 header {
-    background-color: v.$color-fondo-negro;
+    background-color: $color-fondo-negro;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -18,7 +18,7 @@ header {
 
             li {
                 a {
-                    color: v.$color-primario;
+                    color: $color-primario;
                     text-decoration: none;
                 }
             }

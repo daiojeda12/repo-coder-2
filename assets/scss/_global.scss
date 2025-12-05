@@ -1,5 +1,5 @@
 /*  Estilo global del sitio */
-@use 'variables' as v;
+@use 'variables' as *;
 @use 'mixins';
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: v.$font-primary;
+    font-family: $font-primary;
 }
 
 p {
