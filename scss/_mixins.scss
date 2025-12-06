@@ -1,5 +1,3 @@
-@use 'variables' as *;
-
 @mixin caja-negra {
     background-color: $color-fondo-negro;
     border-radius: $radius;

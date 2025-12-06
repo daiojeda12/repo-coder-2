@@ -1,6 +1,4 @@
 /*  Estilo global del sitio */
-@use 'variables' as *;
-@use 'mixins';
 
 * {
     margin: 0;
@@ -18,7 +16,7 @@ p {
 }
 
 .quienes_somos {
-    @include mixins.caja-negra;
+    @include caja-negra;
     margin: 20px;
     text-align: center;
 }

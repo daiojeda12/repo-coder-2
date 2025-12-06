@@ -1,5 +1,4 @@
 /* Estilo de las secciones */
-@use 'mixins';
 
 .Título {
     color: white;
@@ -14,7 +13,7 @@
 }
 
 .quienes_somos {
-    @include mixins.caja-negra;
+    @include caja-negra;
     margin: 20px;
     text-align: center;
 }

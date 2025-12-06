@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* Importación de archivos scss */
 /* Creo las variables de los estilos que hay en común */
-/* Importación de archivos scss */
-/* Importación de archivos scss */
 /*  Estilo global del sitio */
 * {
   margin: 0;
@@ -29,7 +27,6 @@ p {
   text-align: center;
 }
 
-/* Importación de archivos scss */
 /* Estilos y acomodamiento del header */
 header {
   background-color: black;
@@ -143,7 +140,6 @@ header .menu-btn {
   text-align: center;
 }
 
-/* Importación de archivos scss */
 /* Estilos y acomodamiento del footer */
 footer {
   text-align: center;
