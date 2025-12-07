@@ -47,3 +47,17 @@ p {
     color: antiquewhite;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+/*Aplico estilo y flex a banner*/
+.banner-contenido {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 30px;
+}
+
+/*Achico imagen del banner*/
+.banner-contenido img {
+    width: 200px;
+    height: 200px;
+}
