@@ -8,7 +8,7 @@ header {
 
 .Logo-encabezado {
     img {
-        width: 100px;   // ajustá el tamaño que quieras
+        width: 100px;   
         height: auto;
     }
 }
@@ -26,6 +26,7 @@ header {
                 a {
                     color: $color-primario;
                     text-decoration: none;
+                    vertical-align: middle;
                 }
             }
         }

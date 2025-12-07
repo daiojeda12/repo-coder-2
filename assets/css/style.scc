@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Importación de archivos scss */
 /* Creo las variables de los estilos que hay en común */
 /*  Estilo global del sitio */
@@ -61,34 +60,28 @@ header {
   justify-content: space-between;
   padding: 10px;
 }
-
 header .Logo-encabezado img {
   width: 100px;
   height: auto;
 }
-
 header nav {
   display: flex;
   align-items: center;
 }
-
 header nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-
 header nav ul li a {
   color: #52e730;
   text-decoration: none;
   vertical-align: middle;
 }
-
 header nav .menu {
   display: flex;
   gap: 20px;
 }
-
 header .menu-btn {
   display: none;
   color: white;
@@ -106,7 +99,6 @@ header .menu-btn {
   gap: 20px;
   margin: 40px 0;
 }
-
 .contenedor-de-imagenes img {
   width: 100%;
   max-width: 350px;
@@ -118,7 +110,6 @@ header .menu-btn {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-
 .contenedor-de-imagenes-index img {
   width: 100%;
   height: auto;
@@ -132,20 +123,15 @@ header .menu-btn {
     display: block;
     text-align: center;
   }
-
   .contenedor-de-imagenes img {
     width: 90%;
     margin-bottom: 20px;
   }
-
   .contenedor-de-imagenes-index {
     grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 768px) {
-
-  /* Oculto el menú en mobile */
   nav .menu {
     display: none;
     flex-direction: column;
@@ -158,19 +144,10 @@ header .menu-btn {
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   }
-
-  /* Muestro el botón hamburguesa */
-  nav .menu-btn {
+  .menu-btn {
     display: block;
   }
-
-  /* Al activar el menú */
-  nav .menu.open {
-    display: flex;
-  }
-
 }
-
 /* Estilo de las secciones */
 .Título {
   color: white;
@@ -202,4 +179,4 @@ footer {
   color: antiquewhite;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scc.map */
