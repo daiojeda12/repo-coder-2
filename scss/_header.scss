@@ -6,6 +6,13 @@ header {
     justify-content: space-between;
     padding: 10px;
 
+.Logo-encabezado {
+    img {
+        width: 100px;   // ajustá el tamaño que quieras
+        height: auto;
+    }
+}
+
     nav {
         display: flex;
         align-items: center;

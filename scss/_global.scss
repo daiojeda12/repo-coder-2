@@ -20,3 +20,9 @@ p {
     margin: 20px;
     text-align: center;
 }
+
+.banner {
+    background-color: $color-fondo-negro;
+    display: flex;
+    justify-content: center;
+}
