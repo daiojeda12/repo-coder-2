@@ -2,6 +2,12 @@
 /* Importación de archivos scss */
 /* Creo las variables de los estilos que hay en común */
 /* Importación de archivos scss */
+/* Para animación de imagenes (aparición lenta) */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 /* Importación de archivos scss */
 /*  Estilo global del sitio */
 .contenedor-de-imagenes, .banner, .banner-contenido {
@@ -117,6 +123,8 @@ header .menu-btn {
   margin: 40px 0;
 }
 .contenedor-de-imagenes img {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out 0s forwards;
   width: 100%;
   max-width: 350px;
   border-radius: 20px;
@@ -128,6 +136,8 @@ header .menu-btn {
   grid-gap: 10px;
 }
 .contenedor-de-imagenes-index img {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out 0s forwards;
   width: 100%;
   height: auto;
   border-radius: 30px;

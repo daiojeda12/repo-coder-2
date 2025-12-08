@@ -1,5 +1,6 @@
 /* Estilos y acomodamiento de contenedores de imagenes */
 @use '../utilities/extend';
+@use '../utilities/mixins';
 
 .contenedor-de-imagenes {
     @extend %flex-center;
@@ -8,6 +9,7 @@
     margin: 40px 0;
 
     img {
+        @include mixins.fade-in(1.2s);
         width: 100%;
         max-width: 350px;
         border-radius: 20px;
@@ -20,6 +22,7 @@
     grid-gap: 10px;
 
     img {
+        @include mixins.fade-in(1.2s);
         width: 100%;
         height: auto;
         border-radius: 30px;
