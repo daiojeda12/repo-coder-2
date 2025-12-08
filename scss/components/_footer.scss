@@ -1,0 +1,9 @@
+/* Estilos y acomodamiento del footer */
+@use '../base/variables';
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: variables.$color-fondo-negro;
+    color: variables.$color-texto-blanco;
+}

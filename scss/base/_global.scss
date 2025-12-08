@@ -1,4 +1,7 @@
 /*  Estilo global del sitio */
+@use '../base/variables';
+@use '../utilities/mixins';
+@use '../utilities/extend';
 
 * {
     margin: 0;
@@ -7,7 +10,7 @@
 }
 
 body {
-    font-family: $font-primary;
+    font-family: variables.$font-primary;
 }
 
 p {
@@ -16,15 +19,14 @@ p {
 }
 
 .quienes_somos {
-    @include caja-negra;
+    @include mixins.caja-negra;
     margin: 20px;
     text-align: center;
 }
 
 .banner {
-    background-color: $color-fondo-negro;
-    display: flex;
-    justify-content: center;
+    background-color: variables.$color-fondo-negro;
+    @extend %flex-center;
 }
 
 /*Aplico estilo a secciones*/
@@ -34,25 +36,24 @@ p {
     padding: 10px;
     background-color: black;
     border-radius: 10px;
-    color: antiquewhite;
+    color: variables.$color-texto-blanco;
     margin: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .Rutina {
-    background-color: black;
+    background-color: variables.$color-fondo-negro;
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    color: antiquewhite;
+    color: variables.$color-texto-blanco;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*Aplico estilo y flex a banner*/
 .banner-contenido {
-    display: flex;
-    justify-content: center;
-    background-color: black;
+    @extend %flex-center;
+    background-color: variables.$color-fondo-negro;
     padding: 30px;
 }
 

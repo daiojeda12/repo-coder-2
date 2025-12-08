@@ -1,0 +1,9 @@
+@use '../base/variables';
+
+@mixin caja-negra {
+    background-color: variables.$color-fondo-negro;
+    border-radius: variables.$radius;
+    padding: 20px;
+    color: variables.$color-texto-blanco;
+    box-shadow: variables.$sombra;
+}

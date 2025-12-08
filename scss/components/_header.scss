@@ -1,7 +1,8 @@
 /* Estilos y acomodamiento del header */
+@use '../base/variables';
 
 header {
-    background-color: $color-fondo-negro;
+    background-color: variables.$color-fondo-negro;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -24,7 +25,7 @@ header {
 
             li {
                 a {
-                    color: $color-primario;
+                    color: variables.$color-primario;
                     text-decoration: none;
                     vertical-align: middle;
                 }

@@ -1,8 +1,14 @@
 @charset "UTF-8";
-
 /* Importación de archivos scss */
 /* Creo las variables de los estilos que hay en común */
+/* Importación de archivos scss */
+/* Importación de archivos scss */
 /*  Estilo global del sitio */
+.contenedor-de-imagenes, .banner, .banner-contenido {
+  display: flex;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,8 +36,6 @@ p {
 
 .banner {
   background-color: black;
-  display: flex;
-  justify-content: center;
 }
 
 /*Aplico estilo a secciones*/
@@ -56,8 +60,6 @@ p {
 
 /*Aplico estilo y flex a banner*/
 .banner-contenido {
-  display: flex;
-  justify-content: center;
   background-color: black;
   padding: 30px;
 }
@@ -68,6 +70,7 @@ p {
   height: 200px;
 }
 
+/* Importación de archivos scss */
 /* Estilos y acomodamiento del header */
 header {
   background-color: black;
@@ -75,34 +78,28 @@ header {
   justify-content: space-between;
   padding: 10px;
 }
-
 header .Logo-encabezado img {
   width: 100px;
   height: auto;
 }
-
 header nav {
   display: flex;
   align-items: center;
 }
-
 header nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-
 header nav ul li a {
   color: #52e730;
   text-decoration: none;
   vertical-align: middle;
 }
-
 header nav .menu {
   display: flex;
   gap: 20px;
 }
-
 header .menu-btn {
   display: none;
   color: white;
@@ -112,15 +109,13 @@ header .menu-btn {
   cursor: pointer;
 }
 
+/*  Estilo global del sitio */
 /* Estilos y acomodamiento de contenedores de imagenes */
 .contenedor-de-imagenes {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
   margin: 40px 0;
 }
-
 .contenedor-de-imagenes img {
   width: 100%;
   max-width: 350px;
@@ -132,61 +127,11 @@ header .menu-btn {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-
 .contenedor-de-imagenes-index img {
   width: 100%;
   height: auto;
   border-radius: 30px;
   padding: 20px;
-}
-
-/* Responsive para celulares */
-@media (max-width: 600px) {
-  .contenedor-de-imagenes {
-    display: block;
-    text-align: center;
-  }
-
-  .contenedor-de-imagenes img {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .contenedor-de-imagenes-index {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Media queries menu hamburguesa */
-/* Desktop first */
-nav .menu {
-  display: flex;
-  gap: 20px;
-}
-
-@media (max-width: 768px) {
-  nav .menu {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    background-color: white;
-    padding: 20px;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Muestro el botón hamburguesa */
-  .menu-btn {
-    display: block;
-  }
-
-  /* Al activar el menú */
-  nav .menu.open {
-    display: flex;
-  }
 }
 
 /* Estilo de las secciones */
@@ -212,12 +157,57 @@ nav .menu {
   text-align: center;
 }
 
+/* Importación de archivos scss */
 /* Estilos y acomodamiento del footer */
 footer {
   text-align: center;
   padding: 20px;
   background-color: black;
   color: antiquewhite;
+}
+
+/* Responsive para celulares */
+@media (max-width: 600px) {
+  .contenedor-de-imagenes {
+    display: block;
+    text-align: center;
+  }
+  .contenedor-de-imagenes img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .contenedor-de-imagenes-index {
+    grid-template-columns: 1fr;
+  }
+}
+/* Media queries menu hamburguesa */
+/* Desktop first */
+nav .menu {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* Muestro el botón hamburguesa */
+  .menu-btn {
+    display: block;
+  }
+  /* Al activar el menú */
+  nav .menu.open {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
