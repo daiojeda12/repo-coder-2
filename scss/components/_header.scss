@@ -1,49 +1,43 @@
-/* Estilos y acomodamiento del header */
 @use '../base/variables';
 
-header {
-    background-color: variables.$color-fondo-negro;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+/* Header / Navbar Bootstrap */
 
-.Logo-encabezado {
+.navbar {
+    background-color: variables.$color-fondo-negro;
+}
+
+/* Logo */
+.navbar-brand {
+    font-weight: bold;
+    color: variables.$color-primario;
+
+    &:hover {
+        color: white;
+    }
+
     img {
-        width: 100px;   
-        height: auto;
+        max-height: 60px;
     }
 }
 
-    nav {
-        display: flex;
-        align-items: center;
+/* Links del menú */
+.navbar-nav {
+    .nav-link {
+        color: variables.$color-primario;
+        font-weight: 500;
 
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-
-            li {
-                a {
-                    color: variables.$color-primario;
-                    text-decoration: none;
-                    vertical-align: middle;
-                }
-            }
-        }
-
-        .menu {
-            display: flex;
-            gap: 20px;
+        &:hover,
+        &.active {
+            color: white;
         }
     }
+}
 
-    .menu-btn {
-        display: none;
-        color: white;
-        background: none;
-        border: none;
-        font-size: 32px;
-        cursor: pointer;
-    }
+/* Botón hamburguesa */
+.navbar-toggler {
+    border-color: variables.$color-primario;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
 }
