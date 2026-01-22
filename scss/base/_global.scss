@@ -1,7 +1,10 @@
 /*  Estilo global del sitio */
 @use '../base/variables';
-@use '../utilities/mixins';
-@use '../utilities/extend';
+
+body {
+    font-family: variables.$font-primary;
+}
+
 
 * {
     margin: 0;
@@ -9,56 +12,14 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: variables.$font-primary;
-}
 
 p {
     text-align: center;
     padding: 30px;
 }
 
-.quienes_somos {
-    @include mixins.caja-negra;
-    margin: 20px;
-    text-align: center;
-}
-
-.banner {
-    background-color: variables.$color-fondo-negro;
-    @extend %flex-center;
-}
-
-/*Aplico estilo a secciones*/
-
-.Planes {
-    justify-content: center;
-    padding: 10px;
-    background-color: black;
-    border-radius: 10px;
-    color: variables.$color-texto-blanco;
-    margin: 30px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.Rutina {
-    background-color: variables.$color-fondo-negro;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    color: variables.$color-texto-blanco;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-/*Aplico estilo y flex a banner*/
-.banner-contenido {
-    @extend %flex-center;
-    background-color: variables.$color-fondo-negro;
-    padding: 30px;
-}
-
-/*Achico imagen del banner*/
-.banner-contenido img {
-    width: 200px;
-    height: 200px;
+.btn {
+    background-color: #52e730;
+    color: black;
+    border-color: #52e730;
 }
