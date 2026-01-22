@@ -1,8 +1,9 @@
 /*  Estilo global del sitio */
-@use '../base/variables';
 @use '../utilities/maps';
+@use '../base/variables';
 
-as mapa body {
+
+body {
     font-family: variables.$font-primary;
 }
 
@@ -19,9 +20,9 @@ p {
     padding: 30px;
 }
 
-.btn {
-    background-color: map-get($btn-style, "btn-bg");
-    color: map-get($colors, "btn-text");
+.btn-custom {
+    background-color: map-get(maps.$btn-style, "btn-bg");
+    color: map-get(maps.$btn-style, "btn-text");
     border: none;
     padding: 0.75rem 1.2rem;
     border-radius: 6px;
@@ -29,7 +30,7 @@ p {
     transition: background-color 0.3s ease, transform 0.2s ease;
 
     &:hover {
-        background-color: map-get($colors, "btn-hover-bg");
+        background-color: map-get(maps.$btn-style, "btn-hover-bg");
         transform: scale(1.05);
     }
 }

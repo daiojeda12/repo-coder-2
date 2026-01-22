@@ -63,19 +63,19 @@ img {
 
 /* Titulos personalizados a rutinas */
 .titulo-rutina {
-    color: $color-primario;
+    color: variables.$color-primario;
     /* verde acento */
 }
 
 .subtitulo-rutina {
-    color: $color-texto-blanco;
+    color: variables.$color-texto-blanco;
     /* mismo color */
     font-size: 1.25rem;
 }
 
 /* Estilos personalizados a rutinas */
 .Rutina {
-    background-color: $color-fondo-negro;
+    background-color: variables.$color-fondo-negro;
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
