@@ -19,7 +19,7 @@
 
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="../assets/img/logo-header.png" alt="Acuario Gym" width="60" class="me-2">
+                <img src="../assets/img/logo-header.png" alt="Acuario Gym logo" width="60" class="me-2">
                 Acuario GYM | Nuestros servicios
             </a>
 
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./quienes_somos.html">Quiénes somos</a>
@@ -42,7 +42,7 @@
                         <a class="nav-link" href="./nuestro_objetivo.html">Objetivo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./nuestros_servicios.html">Servicios</a>
+                        <a class="nav-link active" href="./nuestros_servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./rutinas.html">Rutinas</a>
@@ -56,7 +56,7 @@
     <main class="container my-5">
         <!--Presentación: Título principal-->
         <section class="Título">
-            <h1>Nuestros servicios para empresas y comercios</h1>
+            <h1 class="display-4">Nuestros servicios para empresas y comercios</h1>
         </section>
 
 
@@ -86,24 +86,33 @@
             </p>
         </section>
 
-        <div class="contenedor-de-imagenes">
-            <img src="../assets/img/img_1.jpg" alt="Entrenamiento completo en Acuario Gym">
-            <img src="../assets/img/img_3.jpg" alt="Entrenamiento completo en Acuario Gym">
-            <img src="../assets/img/img_5.jpg" alt="Entrenamiento completo en Acuario Gym">
-        </div>
+        <!--Boostrap Grid-->
+        <section class="galeria-imagenes container my-5">
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="../assets/img/img_1.jpg" alt="Entrenamiento de piernas en Acuario Gym"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="../assets/img/img_3.jpg" alt="Entrenamiento de espalda en Acuario Gym"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="../assets/img/img_5.jpg" alt="Entrenamiento de brazos en Acuario Gym"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
     </main>
 
 
     <!--Banner de la página-->
-    <div class="banner">
-        <div class="banner-contenido">
-            <img src="../assets/img/logo.png" alt="logo-banner">
-
-        </div>
-    </div>
+    <section class="banner text-center py-5">
+        <img src="../assets/img/logo.webp" alt="Logo Acuario Gym" class="img-fluid w-50">
+    </section>
 
     <!--Derechos de autor-->
-    <footer>
+    <footer class="text-center py-3 bg-black">
         Powered by: Daiana Ojeda. Todos los derechos reservados.
     </footer>
 

@@ -19,7 +19,7 @@
 
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                <img src="../assets/img/logo-header.png" alt="Acuario Gym" width="60" class="me-2">
+                <img src="../assets/img/logo-header.png" alt="Acuario Gym logo" width="60" class="me-2">
                 Acuario GYM | Quienes somos
             </a>
 
@@ -37,10 +37,10 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./quienes_somos.html">Quiénes somos</a>
+                        <a class="nav-link active" href="./quienes_somos.html">Quiénes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./nuestro_objetivo.html">Objetivo</a>
+                        <a class="nav-link" href="./nuestro_objetivo.html">Objetivo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./nuestros_servicios.html">Servicios</a>
@@ -56,8 +56,8 @@
     </header>
     <main class="container my-5">
         <!--Presentación: Título principal-->
-        <section class="Título">
-        <h1>Acuario GYM - Identidad</h1>
+        <section class="text-center mb-5">
+            <h1 class="display-4">Acuario GYM - Identidad</h1>
         </section>
 
         <!--Sección principal-->
@@ -68,16 +68,27 @@
             </h2>
         </section>
 
-        <div class="contenedor-de-imagenes">
-            <img src="../assets/img/img_12.jpg" alt="Entrenamiento completo en Acuario Gym">
-            <img src="../assets/img/img_13.jpg" alt="Entrenamiento completo en Acuario Gym">
-            <img src="../assets/img/img_14.jpg" alt="Entrenamiento completo en Acuario Gym">
-        </div>
+        <!--Boostrap Grid-->
+        <section class="galeria-imagenes container my-5">
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="../assets/img/img_12.webp" alt="Entrenamiento en prensa con peso en Acuario Gym"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="../assets/img/img_13.webp" alt="Pesas y barras en Acuario Gym" class="img-fluid rounded">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="../assets/img/img_14.webp" alt="Hip Trust con barra en Acuario Gym"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
 
         <!--Planes y precios-->
-        <div class="Subtítulo">
+        <section class="Subtítulo">
             <h2>Elegí tu plan en nuestra sucursal ✅</h2>
-        </div>
+        </section>
 
         <section class="Planes">
             <p>
@@ -96,17 +107,15 @@
     </main>
 
     <!--Banner de la página-->
-    <div class="banner">
-        <div class="banner-contenido">
-            <img src="../assets/img/logo.png" alt="logo-banner">
+    <section class="banner text-center py-5">
+        <img src="../assets/img/logo.webp" alt="Logo Acuario Gym" class="img-fluid w-50">
+    </section>
 
-        </div>
-    </div>
-
-    <!--Derecho de autor-->
-    <footer>
+    <!--Derechos de autor-->
+    <footer class="text-center py-3 bg-black">
         Powered by: Daiana Ojeda. Todos los derechos reservados.
     </footer>
+
 
     <!-- JavaScript para Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">

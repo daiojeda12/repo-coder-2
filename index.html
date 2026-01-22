@@ -18,7 +18,7 @@
 
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="./assets/img/logo-header.png" alt="Acuario Gym" width="60" class="me-2">
+                <img src="./assets/img/logo-header.png" alt="Acuario Gym logo" width="60" class="me-2">
                 Acuario GYM | Entrenamiento y bienestar
             </a>
 
@@ -51,31 +51,46 @@
 
         </nav>
     </header>
-    <main class="container">
+    <main class="container py-5">
         <!--Presentación 1: identidad-->
-        <section class="Título">
-            <h1>Entrená tu cuerpo y mente en Acuario GYM</h1>
+        <section class="text-center mb-5">
+            <h1 class="display-4">Entrená tu cuerpo y mente en Acuario GYM</h1>
         </section>
 
         <section class="quienes_somos">
-        <p>
-            Acá vas a hallar tu bienestar y a equilibrar tu mente con tu cuerpo. Vas a mejorar tu técnica y rutina de
-            entrenamiento. Vas a estar asistido por profesionales todo el tiempo.
-            No pospongas más comenzar a entrenar, el momento es ahora.
-        </p>
+            <p>
+                Acá vas a hallar tu bienestar y a equilibrar tu mente con tu cuerpo. Vas a mejorar tu técnica y rutina
+                de
+                entrenamiento. Vas a estar asistido por profesionales todo el tiempo.
+                No pospongas más comenzar a entrenar, el momento es ahora.
+            </p>
         </section>
-        
+
     </main>
 
-    <!--Contenedor de imagenes para grilla-->
-    <div class="contenedor-de-imagenes-index">
-        <img src="./assets/img/img_2.jpg" alt="Entrenamiento completo en Acuario Gym">
-        <img src="./assets/img/img_6.jpg" alt="Entrenamiento completo en Acuario Gym">
-        <img src="./assets/img/img_8.jpg" alt="Entrenamiento completo en Acuario Gym">
-        <img src="./assets/img/img_9.jpg" alt="Entrenamiento completo en Acuario Gym">
-        <img src="./assets/img/img_10.jpg" alt="Entrenamiento completo en Acuario Gym">
-        <img src="./assets/img/img_11.jpg" alt="Entrenamiento completo en Acuario Gym">
-    </div>
+    <!--Boostrap Grid-->
+    <section class="galeria-imagenes container my-5">
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="./assets/img/img_2.webp" alt="Persona levantando pesas en Acuario Gym" class="img-fluid rounded">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="./assets/img/img_6.webp" alt="Entrenamiento con barra en Acuario Gym" class="img-fluid rounded">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="./assets/img/img_8.webp" alt="Mancuernas en Acuario Gym" class="img-fluid rounded">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="./assets/img/img_9.webp" alt="Persona realizando peso muerto con barra en Acuario Gym" class="img-fluid rounded">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="./assets/img/img_10.webp" alt="Armado de rutina en Acuario Gym" class="img-fluid rounded">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="./assets/img/img_11.webp" alt="Espacio de entrenamiento en Acuario Gym" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
 
     <div class="container my-5">
         <h2 class="text-center mb-4">¿Tenés consultas? Contactanos</h2>
@@ -115,19 +130,14 @@
 
 
     <!--Banner de la página-->
-    <div class="banner">
-        <div class="banner-contenido">
-            <img src="./assets/img/logo.png" alt="logo-banner">
-
-        </div>
-    </div>
+    <section class="banner text-center py-5">
+        <img src="../assets/img/logo.webp" alt="Logo Acuario Gym" class="img-fluid w-50">
+    </section>
 
     <!--Derechos de autor-->
-    <footer>
+    <footer class="text-center py-3 bg-black">
         Powered by: Daiana Ojeda. Todos los derechos reservados.
     </footer>
-
-
 
     <!-- JavaScript para Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">

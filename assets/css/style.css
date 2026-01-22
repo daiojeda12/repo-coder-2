@@ -1,19 +1,46 @@
 @charset "UTF-8";
-/* Importación de archivos scss */
-/* Creo las variables de los estilos que hay en común */
-/* Importación de archivos scss */
-/* Para animación de imagenes (aparición lenta) */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Titulos personalizados a rutinas */
+.titulo-rutina {
+  color: #52e730; /* verde acento */
+}
+
+.subtitulo-rutina {
+  color: antiquewhite; /* mismo color */
+  font-size: 1.25rem;
+}
+
+/* Estilos personalizados a rutinas */
+.Rutina {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  color: antiquewhite;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Animaciones a rutinas */
+.Rutina {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  color: antiquewhite;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7);
   }
 }
-/* Importación de archivos scss */
-/*  Estilo global del sitio */
-.contenedor-de-imagenes, .banner, .banner-contenido {
-  display: flex;
-  justify-content: center;
-}
+
 
 * {
   margin: 0;
@@ -21,9 +48,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
 
 p {
   text-align: center;
@@ -55,31 +79,10 @@ p {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.Rutina {
-  background-color: black;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  color: antiquewhite;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
 
-/*Aplico estilo y flex a banner*/
-.banner-contenido {
-  background-color: black;
-  padding: 30px;
-}
-
-/*Achico imagen del banner*/
-.banner-contenido img {
-  width: 200px;
-  height: 200px;
-}
-
-/* Importación de archivos scss */
 /* Header / Navbar Bootstrap */
 .navbar {
-  background-color: black;
+  background-color: black !important;
 }
 
 /* Logo */
@@ -112,34 +115,24 @@ p {
   filter: brightness(0) invert(1);
 }
 
-/*  Estilo global del sitio */
-/* Estilos y acomodamiento de contenedores de imagenes */
-.contenedor-de-imagenes {
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 40px 0;
-}
-.contenedor-de-imagenes img {
-  opacity: 0;
-  animation: fadeIn 1.2s ease-out 0s forwards;
-  width: 100%;
-  max-width: 350px;
-  border-radius: 20px;
+/* Animaciones a imagenes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.contenedor-de-imagenes-index {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-.contenedor-de-imagenes-index img {
+/* Aplica a todas las imágenes */
+img {
   opacity: 0;
-  animation: fadeIn 1.2s ease-out 0s forwards;
-  width: 100%;
-  height: auto;
-  border-radius: 30px;
-  padding: 20px;
+  animation: fadeIn 1s ease-in-out forwards;
 }
+
 
 /* Estilo de las secciones */
 .Título {
