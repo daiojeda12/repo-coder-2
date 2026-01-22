@@ -1,13 +1,7 @@
 /* Creación de mapas para los colores (no lo usaré ya que usaré variables) */
-$colores: (
-    color-primario: #000,
-    color-secundario: white,
-);
+$btn-style: (
+    "btn-bg": #52e730,
+    "btn-text": antiquewhite,
+    "btn-hover-bg": black
+    );
 
-/* Demostración de como se instacian los mapas */
-
-/* @use '../utilities/maps'; as mapa*/
-
-/* Demostración de uso de mapas */
-
-/* backround-color: map.get(mapa.$colores, color-primario); */

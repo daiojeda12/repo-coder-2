@@ -1,7 +1,8 @@
 /*  Estilo global del sitio */
 @use '../base/variables';
+@use '../utilities/maps';
 
-body {
+as mapa body {
     font-family: variables.$font-primary;
 }
 
@@ -19,7 +20,16 @@ p {
 }
 
 .btn {
-    background-color: #52e730;
-    color: black;
-    border-color: #52e730;
+    background-color: map-get($btn-style, "btn-bg");
+    color: map-get($colors, "btn-text");
+    border: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: map-get($colors, "btn-hover-bg");
+        transform: scale(1.05);
+    }
 }
